@@ -1,0 +1,51 @@
+name: Feature request
+description: Предложение улучшения API
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Какая задача/юзкейс не закрывается текущим API?
+      placeholder: |
+        Сейчас нет возможности получить статистику по плейлистам пользователя.
+        Нужно добавить endpoint для получения количества треков, общей длительности и т.д.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Как вы предлагаете решить эту проблему?
+      placeholder: |
+        Добавить новый endpoint GET /playlists/{id}/stats который вернет:
+        - totalTracks: количество треков
+        - totalDuration: общая длительность в секундах
+        - averageRating: средний рейтинг
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Какие альтернативные решения вы рассматривали?
+      placeholder: |
+        - Добавить поля в существующий endpoint /playlists/{id}
+        - Создать отдельный endpoint /stats/playlists/{id}
+        - Включить статистику в response при получении плейлиста
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use case
+      description: Опишите конкретный сценарий использования
+      placeholder: |
+        Пользователь хочет видеть общую статистику своего плейлиста "Любимые треки"
+        для отображения в мобильном приложении на главном экране.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Приоритет для команды разработки
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical 
