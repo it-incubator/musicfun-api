@@ -1,77 +1,77 @@
-# Шаблон релиз-нот
+# Release Notes Template
 
 ## 🚨 Breaking changes
-- Изменения, которые ломают обратную совместимость
-- Пример: `Удален deprecated endpoint /v1/old-endpoint`
+- Changes that break backward compatibility
+- Example: `Removed deprecated endpoint /v1/old-endpoint`
 
 ## ✨ Features
-- Новые функции и возможности
-- Пример: `Добавлен endpoint /playlists/{id}/stats для получения статистики`
+- New features and capabilities
+- Example: `Added endpoint /playlists/{id}/stats for getting statistics`
 
 ## 🐞 Fixes
-- Исправления багов
-- Пример: `Исправлена ошибка 500 при получении плейлиста с пустым названием`
+- Bug fixes
+- Example: `Fixed 500 error when getting playlist with empty title`
 
 ## 📚 Documentation
-- Обновления документации
-- Пример: `Добавлены примеры для всех endpoints в документации`
+- Documentation updates
+- Example: `Added examples for all endpoints in documentation`
 
 ## 🔧 Technical
-- Технические изменения
-- Пример: `Обновлена версия OpenAPI до 3.1.0`
+- Technical changes
+- Example: `Updated OpenAPI version to 3.1.0`
 
 ## 🚀 Performance
-- Улучшения производительности
-- Пример: `Оптимизированы запросы к базе данных для получения плейлистов`
+- Performance improvements
+- Example: `Optimized database queries for getting playlists`
 
 ## 🔒 Security
-- Изменения безопасности
-- Пример: `Добавлена валидация JWT токенов`
+- Security changes
+- Example: `Added JWT token validation`
 
 ---
 
-## Пример заполненного релиза
+## Example filled release
 
 ## 🚀 v1.2.0
 
 ### ✨ Features
-- Добавлен endpoint `/playlists/{id}/stats` для получения статистики плейлиста
-- Поддержка bulk операций для треков
-- Добавлена фильтрация по дате создания
+- Added endpoint `/playlists/{id}/stats` for getting playlist statistics
+- Support for bulk operations for tracks
+- Added filtering by creation date
 
 ### 🐞 Fixes
-- Исправлена ошибка 500 при получении плейлиста с пустым названием
-- Исправлена пагинация для больших списков треков
-- Исправлена валидация email в профиле пользователя
+- Fixed 500 error when getting playlist with empty title
+- Fixed pagination for large track lists
+- Fixed email validation in user profile
 
 ### 📚 Documentation
-- Добавлены примеры для всех endpoints в документации
-- Обновлен раздел авторизации
-- Добавлены FAQ в Discussions
+- Added examples for all endpoints in documentation
+- Updated authorization section
+- Added FAQ to Discussions
 
 ### 🔧 Technical
-- Обновлена версия OpenAPI до 3.1.0
-- Улучшена обработка ошибок
-- Добавлено логирование запросов
+- Updated OpenAPI version to 3.1.0
+- Improved error handling
+- Added request logging
 
 ### 🚀 Performance
-- Оптимизированы запросы к базе данных для получения плейлистов
-- Добавлено кэширование для статических данных
+- Optimized database queries for getting playlists
+- Added caching for static data
 
 ---
 
-## Миграция (если есть breaking changes)
+## Migration (if there are breaking changes)
 
-### Изменения в v1.2.0
+### Changes in v1.2.0
 
 #### Breaking Changes
-- Удален deprecated endpoint `/v1/old-endpoint`
-- Изменен формат ответа для `/playlists` - добавлено поле `stats`
+- Removed deprecated endpoint `/v1/old-endpoint`
+- Changed response format for `/playlists` - added `stats` field
 
 #### Migration Guide
-1. Замените вызовы `/v1/old-endpoint` на `/v2/new-endpoint`
-2. Обновите обработку ответа `/playlists` для поддержки нового поля `stats`
+1. Replace calls to `/v1/old-endpoint` with `/v2/new-endpoint`
+2. Update `/playlists` response handling to support new `stats` field
 
 #### Deprecation Timeline
-- `v1.2.0`: `/v1/old-endpoint` помечен как deprecated
-- `v1.3.0`: `/v1/old-endpoint` будет удален 
+- `v1.2.0`: `/v1/old-endpoint` marked as deprecated
+- `v1.3.0`: `/v1/old-endpoint` will be removed 

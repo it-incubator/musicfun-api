@@ -1,49 +1,49 @@
 name: Feature request
-description: Предложение улучшения API
+description: Suggest an API improvement
 labels: [enhancement]
 body:
   - type: textarea
     id: problem
     attributes:
       label: Problem to solve
-      description: Какая задача/юзкейс не закрывается текущим API?
+      description: What task/use case is not covered by the current API?
       placeholder: |
-        Сейчас нет возможности получить статистику по плейлистам пользователя.
-        Нужно добавить endpoint для получения количества треков, общей длительности и т.д.
+        Currently there's no way to get playlist statistics for a user.
+        Need to add an endpoint to get track count, total duration, etc.
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
       label: Proposed solution
-      description: Как вы предлагаете решить эту проблему?
+      description: How do you propose to solve this problem?
       placeholder: |
-        Добавить новый endpoint GET /playlists/{id}/stats который вернет:
-        - totalTracks: количество треков
-        - totalDuration: общая длительность в секундах
-        - averageRating: средний рейтинг
+        Add new endpoint GET /playlists/{id}/stats that returns:
+        - totalTracks: number of tracks
+        - totalDuration: total duration in seconds
+        - averageRating: average rating
   - type: textarea
     id: alternatives
     attributes:
       label: Alternatives considered
-      description: Какие альтернативные решения вы рассматривали?
+      description: What alternative solutions did you consider?
       placeholder: |
-        - Добавить поля в существующий endpoint /playlists/{id}
-        - Создать отдельный endpoint /stats/playlists/{id}
-        - Включить статистику в response при получении плейлиста
+        - Add fields to existing endpoint /playlists/{id}
+        - Create separate endpoint /stats/playlists/{id}
+        - Include statistics in response when getting playlist
   - type: textarea
     id: usecase
     attributes:
       label: Use case
-      description: Опишите конкретный сценарий использования
+      description: Describe a specific usage scenario
       placeholder: |
-        Пользователь хочет видеть общую статистику своего плейлиста "Любимые треки"
-        для отображения в мобильном приложении на главном экране.
+        User wants to see overall statistics of their "Favorite Tracks" playlist
+        for display in mobile app on the main screen.
   - type: dropdown
     id: priority
     attributes:
       label: Priority
-      description: Приоритет для команды разработки
+      description: Priority for development team
       options:
         - Low
         - Medium

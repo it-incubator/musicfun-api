@@ -1,5 +1,5 @@
 name: Bug report
-description: Сообщите о проблеме с API
+description: Report an issue with the API
 labels: [bug]
 body:
   - type: input
@@ -25,26 +25,26 @@ body:
     id: steps
     attributes:
       label: Steps to Reproduce
-      description: Минимальные шаги/пэйлоад/заголовки для воспроизведения
+      description: Minimal steps/payload/headers to reproduce
       placeholder: |
-        1. Отправьте GET запрос на /playlists
-        2. Добавьте заголовок Authorization: Bearer <token>
-        3. Получите ошибку 500
+        1. Send GET request to /playlists
+        2. Add Authorization header: Bearer <token>
+        3. Get 500 error
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
       label: Expected behavior
-      description: Что должно было произойти
-      placeholder: Должен вернуться список плейлистов с кодом 200
+      description: What should have happened
+      placeholder: Should return list of playlists with 200 status code
   - type: textarea
     id: actual
     attributes:
       label: Actual behavior / Logs
-      description: Что произошло на самом деле (включая логи ошибок)
+      description: What actually happened (including error logs)
       placeholder: |
-        Получена ошибка 500:
+        Got 500 error:
         {
           "error": "Internal server error",
           "message": "Database connection failed"
@@ -54,16 +54,16 @@ body:
     attributes:
       label: API version
       placeholder: v1.0.0
-      description: Версия API, на которой воспроизводится баг
+      description: API version where the bug reproduces
   - type: textarea
     id: environment
     attributes:
       label: Environment
-      description: Окружение (production, staging, local)
+      description: Environment (production, staging, local)
       placeholder: production
   - type: textarea
     id: additional
     attributes:
       label: Additional context
-      description: Любая дополнительная информация, которая может помочь
-      placeholder: Баг воспроизводится только при определенных условиях... 
+      description: Any additional information that might help
+      placeholder: Bug reproduces only under certain conditions... 

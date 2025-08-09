@@ -3,20 +3,20 @@
 - 📦 **OpenAPI**: `/openapi/openapi.yaml`
 - 🧭 **Live API Reference**: [API Reference](./api.html)
 - 🗂️ **Q&A**: [Discussions → Q&A](https://github.com/it-incubator/musicfun-api/discussions/categories/q-a)
-- 🚀 **Roadmap**: см. pinned issue / [Discussions → Announcements](https://github.com/it-incubator/musicfun-api/discussions/categories/announcements)
+- 🚀 **Roadmap**: see pinned issue / [Discussions → Announcements](https://github.com/it-incubator/musicfun-api/discussions/categories/announcements)
 - 📝 **Latest release**: [Releases](https://github.com/it-incubator/musicfun-api/releases)
 
-## Быстрый старт
+## Quick Start
 
-### Базовая информация
+### Basic Information
 - **Base URL**: `https://musicfun.it-incubator.app`
-- **Авторизация**: Bearer Token или API Key
-- **Формат данных**: JSON
-- **Кодировка**: UTF-8
+- **Authorization**: Bearer Token or API Key
+- **Data Format**: JSON
+- **Encoding**: UTF-8
 
-### Авторизация
+### Authorization
 
-API поддерживает два типа авторизации:
+The API supports two types of authorization:
 
 #### Bearer Token
 ```bash
@@ -30,61 +30,61 @@ curl -H "X-API-Key: YOUR_API_KEY" \
      https://musicfun.it-incubator.app/playlists
 ```
 
-### Примеры запросов
+### Request Examples
 
-#### Получение плейлистов
+#### Get Playlists
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
      "https://musicfun.it-incubator.app/playlists?pageNumber=1&pageSize=10"
 ```
 
-#### Создание плейлиста
+#### Create Playlist
 ```bash
 curl -X POST \
      -H "Authorization: Bearer $TOKEN" \
      -H "Content-Type: application/json" \
      -d '{
-       "name": "Мой плейлист",
-       "description": "Описание плейлиста"
+       "name": "My Playlist",
+       "description": "Playlist description"
      }' \
      https://musicfun.it-incubator.app/playlists
 ```
 
-#### Получение трека
+#### Get Track
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
      https://musicfun.it-incubator.app/tracks/TRACK_ID
 ```
 
-## Основные эндпоинты
+## Main Endpoints
 
-### Плейлисты
-- `GET /playlists` - Получить список плейлистов
-- `POST /playlists` - Создать плейлист
-- `GET /playlists/{id}` - Получить плейлист по ID
-- `PUT /playlists/{id}` - Обновить плейлист
-- `DELETE /playlists/{id}` - Удалить плейлист
+### Playlists
+- `GET /playlists` - Get list of playlists
+- `POST /playlists` - Create playlist
+- `GET /playlists/{id}` - Get playlist by ID
+- `PUT /playlists/{id}` - Update playlist
+- `DELETE /playlists/{id}` - Delete playlist
 
-### Треки
-- `GET /tracks` - Получить список треков
-- `POST /tracks` - Создать трек
-- `GET /tracks/{id}` - Получить трек по ID
-- `PUT /tracks/{id}` - Обновить трек
-- `DELETE /tracks/{id}` - Удалить трек
+### Tracks
+- `GET /tracks` - Get list of tracks
+- `POST /tracks` - Create track
+- `GET /tracks/{id}` - Get track by ID
+- `PUT /tracks/{id}` - Update track
+- `DELETE /tracks/{id}` - Delete track
 
-### Артисты
-- `GET /artists` - Получить список артистов
-- `POST /artists` - Создать артиста
-- `GET /artists/{id}` - Получить артиста по ID
+### Artists
+- `GET /artists` - Get list of artists
+- `POST /artists` - Create artist
+- `GET /artists/{id}` - Get artist by ID
 
-### Теги
-- `GET /tags` - Получить список тегов
-- `POST /tags` - Создать тег
-- `GET /tags/{id}` - Получить тег по ID
+### Tags
+- `GET /tags` - Get list of tags
+- `POST /tags` - Create tag
+- `GET /tags/{id}` - Get tag by ID
 
-## Пагинация
+## Pagination
 
-API использует пагинацию для больших списков:
+The API uses pagination for large lists:
 
 ```json
 {
@@ -98,21 +98,21 @@ API использует пагинацию для больших списков
 }
 ```
 
-## Обработка ошибок
+## Error Handling
 
-API возвращает стандартные HTTP коды состояния:
+The API returns standard HTTP status codes:
 
-- `200` - Успешный запрос
-- `201` - Ресурс создан
-- `204` - Успешный запрос без тела ответа
-- `400` - Неверный запрос
-- `401` - Не авторизован
-- `403` - Доступ запрещен
-- `404` - Ресурс не найден
-- `500` - Внутренняя ошибка сервера
+- `200` - Successful request
+- `201` - Resource created
+- `204` - Successful request without response body
+- `400` - Bad request
+- `401` - Unauthorized
+- `403` - Forbidden
+- `404` - Resource not found
+- `500` - Internal server error
 
-## Поддержка
+## Support
 
-- **Вопросы**: [Discussions (Q&A)](https://github.com/it-incubator/musicfun-api/discussions/categories/q-a)
-- **Баг-репорты**: [Issues](https://github.com/it-incubator/musicfun-api/issues)
-- **Уязвимости**: [Security Policy](https://github.com/it-incubator/musicfun-api/blob/main/SECURITY.md) 
+- **Questions**: [Discussions (Q&A)](https://github.com/it-incubator/musicfun-api/discussions/categories/q-a)
+- **Bug Reports**: [Issues](https://github.com/it-incubator/musicfun-api/issues)
+- **Vulnerabilities**: [Security Policy](https://github.com/it-incubator/musicfun-api/blob/main/SECURITY.md) 

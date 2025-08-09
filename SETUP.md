@@ -1,119 +1,119 @@
-# Настройка GitHub репозитория
+# GitHub Repository Setup
 
-## Что уже создано
+## What's already created
 
-✅ **Issues Templates** - формы для баг-репортов и фич-реквестов  
-✅ **Security Policy** - политика безопасности  
-✅ **Contributing Guidelines** - правила для контрибьюторов  
-✅ **Documentation** - базовая документация  
-✅ **OpenAPI Schema** - спецификация API  
+✅ **Issues Templates** - forms for bug reports and feature requests  
+✅ **Security Policy** - security policy  
+✅ **Contributing Guidelines** - rules for contributors  
+✅ **Documentation** - basic documentation  
+✅ **OpenAPI Schema** - API specification  
 
-## Что нужно настроить вручную
+## What needs to be configured manually
 
-### 1. Включить Discussions
+### 1. Enable Discussions
 
-1. Перейдите в **Settings** → **General**
-2. Прокрутите до секции **Features**
-3. Включите **Discussions**
-4. Создайте категории:
-   - **Q&A** - вопросы по использованию API
-   - **General** - общие обсуждения
-   - **Announcements** - анонсы и новости
+1. Go to **Settings** → **General**
+2. Scroll to **Features** section
+3. Enable **Discussions**
+4. Create categories:
+   - **Q&A** - questions about using the API
+   - **General** - general discussions
+   - **Announcements** - announcements and news
 
-### 2. Создать Labels
+### 2. Create Labels
 
-В **Issues** → **Labels** создайте:
+In **Issues** → **Labels** create:
 
-- `bug` - баги (красный)
-- `enhancement` - улучшения (зеленый)
-- `breaking` - breaking changes (оранжевый)
-- `question` - вопросы (синий)
-- `documentation` - документация (голубой)
-- `help wanted` - нужна помощь (фиолетовый)
+- `bug` - bugs (red)
+- `enhancement` - improvements (green)
+- `breaking` - breaking changes (orange)
+- `question` - questions (blue)
+- `documentation` - documentation (light blue)
+- `help wanted` - help needed (purple)
 
-### 3. Включить GitHub Pages
+### 3. Enable GitHub Pages
 
 1. **Settings** → **Pages**
 2. **Source**: Deploy from a branch
 3. **Branch**: main
 4. **Folder**: /docs
-5. Сохраните
+5. Save
 
-Сайт будет доступен по адресу: `https://it-incubator.github.io/musicfun-api/`
+The site will be available at: `https://it-incubator.github.io/musicfun-api/`
 
-### 4. Создать первый релиз
+### 4. Create first release
 
-1. Создайте тег: `v1.0.0`
+1. Create tag: `v1.0.0`
 2. **Releases** → **Create a new release**
-3. Выберите тег
-4. Заполните релиз-ноты:
+3. Select tag
+4. Fill in release notes:
 
 ```markdown
 ## 🚀 Initial Release
 
 ### ✨ Features
-- REST API для работы с музыкальными плейлистами
-- Управление треками, артистами и тегами
-- Авторизация через Bearer Token и API Key
-- Пагинация и фильтрация
-- Загрузка изображений
+- REST API for working with music playlists
+- Track, artist, and tag management
+- Authorization via Bearer Token and API Key
+- Pagination and filtering
+- Image uploads
 
 ### 📚 Documentation
-- OpenAPI 3.0 спецификация
-- Интерактивная документация (Swagger UI)
-- Примеры запросов
-- GitHub Pages сайт
+- OpenAPI 3.0 specification
+- Interactive documentation (Swagger UI)
+- Request examples
+- GitHub Pages site
 
 ### 🔧 Technical
-- JSON:API формат ответов
-- Стандартные HTTP коды состояния
-- UTF-8 кодировка
-- CORS поддержка
+- JSON:API response format
+- Standard HTTP status codes
+- UTF-8 encoding
+- CORS support
 ```
 
-### 5. Закрепить важные Issues/Discussions
+### 5. Pin important Issues/Discussions
 
-Создайте и закрепите:
+Create and pin:
 
-- **Roadmap** - план развития API
-- **FAQ** - часто задаваемые вопросы
-- **Migration Guide** - руководство по миграции (когда появятся breaking changes)
+- **Roadmap** - API development plan
+- **FAQ** - frequently asked questions
+- **Migration Guide** - migration guide (when breaking changes appear)
 
-## Структура репозитория
+## Repository structure
 
 ```
 musicfun-api/
-├── README.md                 # Главная страница
-├── SECURITY.md              # Политика безопасности
-├── CONTRIBUTING.md          # Правила контрибьюции
-├── SETUP.md                 # Этот файл
+├── README.md                 # Main page
+├── SECURITY.md              # Security policy
+├── CONTRIBUTING.md          # Contribution rules
+├── SETUP.md                 # This file
 ├── openapi/
-│   └── openapi.yaml         # OpenAPI спецификация
+│   └── openapi.yaml         # OpenAPI specification
 ├── docs/                    # GitHub Pages
-│   ├── index.md             # Главная страница документации
+│   ├── index.md             # Documentation main page
 │   └── api.html             # Swagger UI
 └── .github/
     └── ISSUE_TEMPLATE/
-        ├── bug.yml          # Форма баг-репорта
-        ├── feature.yml      # Форма фич-реквеста
-        └── config.yml       # Конфигурация issues
+        ├── bug.yml          # Bug report form
+        ├── feature.yml      # Feature request form
+        └── config.yml       # Issues configuration
 ```
 
-## Полезные ссылки
+## Useful links
 
-- **Документация**: https://it-incubator.github.io/musicfun-api/
+- **Documentation**: https://it-incubator.github.io/musicfun-api/
 - **API Reference**: https://it-incubator.github.io/musicfun-api/api.html
 - **Issues**: https://github.com/it-incubator/musicfun-api/issues
 - **Discussions**: https://github.com/it-incubator/musicfun-api/discussions
 - **Releases**: https://github.com/it-incubator/musicfun-api/releases
 
-## Автоматизация (опционально)
+## Automation (optional)
 
-Для автоматизации можно добавить GitHub Actions:
+For further automation you can add GitHub Actions:
 
-- Автоматическое обновление OpenAPI схемы
-- Проверка валидности OpenAPI
-- Автоматические релизы
-- Уведомления в Slack/Discord
+- Automatic OpenAPI schema updates
+- OpenAPI validation
+- Automatic releases
+- Slack/Discord notifications
 
-Создайте файл `.github/workflows/update-openapi.yml` при необходимости. 
+Create file `.github/workflows/update-openapi.yml` if needed. 

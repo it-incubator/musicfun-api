@@ -2,28 +2,28 @@
 
 ## Supported versions
 
-Мы поддерживаем только последние две минорные версии API.
+We support only the latest two minor versions of the API.
 
 ## Reporting a vulnerability
 
-Пожалуйста, не создавайте публичных issues для уязвимостей безопасности.
+Please do not create public issues for security vulnerabilities.
 
-**Варианты сообщения о уязвимости:**
+**Options for reporting vulnerabilities:**
 
-1. **Email**: security@it-incubator.ru
+1. **Email**: security@it-incubator.io
 2. **GitHub Security Advisories**: Security → Advisories → New draft security advisory
 
-Мы подтвердим получение в течение 2 рабочих дней и дадим ETA фикса.
+We will confirm receipt within 2 business days and provide an ETA for the fix.
 
-## Что считается уязвимостью
+## What is considered a vulnerability
 
-- Неавторизованный доступ к данным
-- SQL инъекции
-- XSS атаки
-- CSRF уязвимости
-- Утечки конфиденциальной информации
-- DoS/DDoS уязвимости
+- Unauthorized access to data
+- SQL injections
+- XSS attacks
+- CSRF vulnerabilities
+- Leaks of confidential information
+- DoS/DDoS vulnerabilities
 
-## Благодарности
+## Acknowledgments
 
-Разработчики, сообщившие о уязвимостях, будут упомянуты в релиз-нотах (если они этого пожелают). 
+Developers who report vulnerabilities will be mentioned in release notes (if they wish). 

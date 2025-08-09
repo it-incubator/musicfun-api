@@ -1,48 +1,48 @@
 # Contributing
 
-## Как внести вклад
+## How to contribute
 
-### Вопросы по использованию
+### Questions about usage
 → [Discussions (Q&A)](https://github.com/it-incubator/musicfun-api/discussions/categories/q-a)
 
-### Баги и фичи
-→ [Issues](https://github.com/it-incubator/musicfun-api/issues) (используйте формы Bug report / Feature request)
+### Bugs and features
+→ [Issues](https://github.com/it-incubator/musicfun-api/issues) (use Bug report / Feature request forms)
 
-### Уязвимости безопасности
+### Security vulnerabilities
 → [Security Policy](SECURITY.md)
 
-## Правила
+## Rules
 
-### Коммиты
-- Осмысленные сообщения коммитов
-- Связывайте PR с issue через `Fixes #123` или `Closes #123`
-- Используйте conventional commits: `feat:`, `fix:`, `docs:`, `style:`, `refactor:`, `test:`, `chore:`
+### Commits
+- Meaningful commit messages
+- Link PRs to issues via `Fixes #123` or `Closes #123`
+- Use conventional commits: `feat:`, `fix:`, `docs:`, `style:`, `refactor:`, `test:`, `chore:`
 
-### Релизы и версионирование
+### Releases and versioning
 - SemVer (Semantic Versioning)
-- Breaking changes помечаем ярлыком `breaking`
-- Релиз-ноты в формате:
+- Mark breaking changes with `breaking` label
+- Release notes format:
   - 🚨 Breaking changes
   - ✨ Features  
   - 🐞 Fixes
   - 📚 Documentation
 
-### Код
-- Следуйте существующим соглашениям по стилю
-- Добавляйте тесты для новых функций
-- Обновляйте документацию при изменении API
+### Code
+- Follow existing style conventions
+- Add tests for new features
+- Update documentation when changing API
 
-## Процесс
+## Process
 
-1. Создайте issue для обсуждения изменений
-2. Форкните репозиторий
-3. Создайте ветку для ваших изменений
-4. Внесите изменения
-5. Добавьте тесты
-6. Убедитесь, что все тесты проходят
-7. Создайте Pull Request
-8. Опишите изменения в PR описании
+1. Create an issue to discuss changes
+2. Fork the repository
+3. Create a branch for your changes
+4. Make changes
+5. Add tests
+6. Ensure all tests pass
+7. Create a Pull Request
+8. Describe changes in PR description
 
-## Поддержка
+## Support
 
-Если у вас есть вопросы по процессу контрибьюции, создайте issue или задайте вопрос в Discussions. 
+If you have questions about the contribution process, create an issue or ask in Discussions. 

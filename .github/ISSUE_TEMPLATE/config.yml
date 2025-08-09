@@ -2,10 +2,10 @@ blank_issues_enabled: false
 contact_links:
   - name: Questions & Answers
     url: https://github.com/it-incubator/musicfun-api/discussions/categories/q-a
-    about: Вопрос по использованию API? Задайте в Discussions (Q&A)
+    about: Question about using the API? Ask in Discussions (Q&A)
   - name: General Discussion
     url: https://github.com/it-incubator/musicfun-api/discussions/categories/general
-    about: Общие обсуждения и предложения по развитию API
+    about: General discussions and suggestions for API development
   - name: Announcements
     url: https://github.com/it-incubator/musicfun-api/discussions/categories/announcements
-    about: Анонсы новых версий и важных изменений 
+    about: Announcements of new versions and important changes 
